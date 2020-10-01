@@ -1,24 +1,24 @@
 
 export function didUserWin (userInput, compInput){
     if(userInput === compInput){
-        return "tie";
+        return 'tie';
     }
     if(userInput === 'paper' && compInput === 'rock'){
-        return "win";
+        return 'win';
     }
     if(userInput === 'scissors' && compInput === 'rock'){
-        return "lose";
+        return 'lose';
     }
     if(userInput === 'rock' && compInput === 'paper'){
-        return "lose";
+        return 'lose';
     }
     if(userInput === 'scissors' && compInput === 'paper'){
-        return "win";
+        return 'win';
     }
     if(userInput === 'paper' && compInput === 'scissors'){
-        return "lose";
+        return 'lose';
     }
     if(userInput === 'rock' && compInput === 'scissors'){
-        return "win";
+        return 'win';
     }
 }

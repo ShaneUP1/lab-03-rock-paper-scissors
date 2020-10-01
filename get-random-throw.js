@@ -1,14 +1,14 @@
 
 
 export function getRandomThrow() {
-   const compThrow = Math.ceil(Math.random()*3);
-
+   let compThrow = Math.ceil(Math.random()*3);
+console.log(compThrow);
    let convertToRPS;
 
    if (compThrow === 1) {
        convertToRPS = 'rock';
    }
-   if (compThrow === 2) {
+   else if (compThrow === 2) {
        convertToRPS = 'paper';
    } else {
        convertToRPS = 'scissors';

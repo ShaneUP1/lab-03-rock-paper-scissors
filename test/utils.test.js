@@ -73,16 +73,7 @@ test('if computer input and the user input are the same it will return tie', (ex
     expect.equal(actual, expected);
 })
 
-
-
-
-
 })
-
-
-
-
-
 
 
 
@@ -95,15 +86,15 @@ test('should return a random number between 1 and 3', (expect) => {
     //Act 
     // Call the function you're testing and set the result to a const
     const actual = getRandomThrow();
-    // console.log(getRandomThrow());
+    console.log(getRandomThrow());
     const actual1 = getRandomThrow();
-    // console.log(getRandomThrow());
+    console.log(getRandomThrow());
     const actual2 = getRandomThrow();
-    // console.log(getRandomThrow());
+    console.log(getRandomThrow());
     const actual3 = getRandomThrow();
-    // console.log(getRandomThrow());
+    console.log(getRandomThrow());
     const actual4 = getRandomThrow();
-    // console.log(getRandomThrow());
+    console.log(getRandomThrow());
 
     //Expect
     // Make assertions about what is expected versus the actual result
