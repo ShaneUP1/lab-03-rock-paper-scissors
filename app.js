@@ -5,7 +5,9 @@ import { didUserWin } from './did-user-win.js'
 const button = document.querySelector('#play');
 const gameWins = document.querySelector('#wins');
 const gameLosses = document.querySelector('#losses');
-const gameTies = document.querySelector('#ties')
+const gameTies = document.querySelector('#ties');
+const gameResetButton = document.querySelector('#reset-button');
+
 
 const throwResult = document.querySelector("#game-result");
 const compThrow = document.querySelector("#comp-result");
@@ -50,7 +52,26 @@ button.addEventListener('click', () => {
         throwResult.textContent = "It was a tie."
     }
     
-    
+
+})
+
+gameResetButton.addEventListener('click', () => {
+
+// function
+// reset wins losses and ties 
+gameWins.textContent = 0;
+gameLosses.textContent = 0;
+gameTies.textContent = 0;
+
+// reset throwResult
+throwResult.textContent = '';
+
+// compThrow and userThrow 
+compThrow.textContent = '';
+userThrow.textContent = '';
+
+
+
 
 
 })
