@@ -18,37 +18,67 @@
             <img src="assets/big-logo.png"/>
         </div>
     </header>
+
+<!-- Main------------------------------------------------------------------------------------------------------------------------- -->
+
     <main>
-        <section class="main-section">
-            <div>
-                <label>
-                    <img src="../assets/rock.png"/>
-                    <input 
+  
+        <!-- Buttons------------------------------------------- -->
+  
+        <section class="main-section" id="game-main">
+
+            
+            <div class= rock-paper-scissors>
+                
+            <!-- PictureONE -->
+
+                    <label class="selectors" id='rock-selection'>
+                        
+                        <input class="radio" 
                         type="radio" 
                         name="rps" 
                         value="rock"
-                    />
-                </label>
-                <label>
-                    <img src="../assets/paper.png"/>
-                    <input
+                        checked
+                        />
+                        <img src="../assets/rock.png"/>
+
+                    </label>
+
+            <!-- PictureTwo -->
+
+                    <label class="selectors" id="paper-selection">
+                        
+                        <input class="radio"
                         type="radio"
                         name="rps"
                         value="paper"
-                    />
-                </label>
-                <label>
-                    <img src="../assets/scissors.png"/>
-                    <input
+                        />
+                        <img src="../assets/paper.png"/>
+
+                    </label>
+
+            <!-- PictureTHREE -->
+
+                    <label class="selectors" id="scissor-selection">
+                        
+                        <input class="radio"
                         type="radio"
                         name="rps"
                         value="scissors"
-                    />
-                </label>
-            </div>
+                        />
+                        <img src="../assets/scissors.png"/>
+
+                    </label>
+
+                </div>
+
+<!-- Other Stuff------------------------------------------------- -->
+                <br>
+                <br>
+
             <button id="play">3, 2, 1, Throw!</button>
             <div>Computer threw <span id="comp-result"></span> and you threw <span id="user-choice"></span></div>
-            <div id="game-result">Results Here</div>
+            <div id="game-result"></div>
             <div>
                 Wins: <span id="wins">0</span>
             </div>
@@ -58,9 +88,16 @@
             <div>
                 Ties: <span id="ties">0</span>
             </div>
+
+<!-- Set reset button to document reset  -->
+
+            <button id="reset-button">Reset</button>
             
         </section>
     </main>
+
+<!-- footer---------------------------------------------------------------------------------------------------------------------------------- -->
+
     <footer>
         <div class="copy gutter-right">&copy; 2020 Alchemy Code Lab</div>
     </footer>
