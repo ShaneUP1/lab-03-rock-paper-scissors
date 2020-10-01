@@ -3,6 +3,23 @@
 import {getRandomThrow} from '../get-random-throw.js'
 const test = QUnit.test;
 
+
+test('if computer input and the user input are the same it will return tie', (expect) => {
+    const userInput = 'rock';
+    const compInput = 'rock';
+    
+    const expected = 'tie';
+    const actual = 
+})
+
+
+
+
+test('should return a win, lose, or tie based on user input and computer generated random input', (expect) => {
+    const 
+
+
+
 test('should return a random number between 1 and 3', (expect) => {
     //Arrange
     // Set up your arguments and expectations

@@ -1,4 +1,5 @@
 // import functions and grab DOM elements
+import { getRandomThrow } from ./get-random-throw.js;
 
 const button = document.querySelector('#play');
 const gameWins = document.querySelector('#wins');
@@ -18,3 +19,12 @@ let ties = 0;
 
 // set event listeners to update state and DOM
 
+button.addEventListener('click', () => {
+
+    const compareTo = getRandomThrow();
+    const checkedChoice = document.querySelector(':checked');
+    
+    const usersChoice = checkedChoice.value;
+
+
+})
