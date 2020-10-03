@@ -1,6 +1,6 @@
 // import functions and grab DOM elements
 import { getRandomThrow } from './get-random-throw.js';
-import { didUserWin } from './did-user-win.js'
+import { didUserWin } from './did-user-win.js';
 
 const button = document.querySelector('#play');
 const gameWins = document.querySelector('#wins');
@@ -9,9 +9,10 @@ const gameTies = document.querySelector('#ties');
 const gameResetButton = document.querySelector('#reset-button');
 
 
-const throwResult = document.querySelector("#game-result");
-const compThrow = document.querySelector("#comp-result");
-const userThrow = document.querySelector("#user-choice");
+const throwResult = document.querySelector('#game-result');
+const compThrow = document.querySelector('#comp-result');
+const userThrow = document.querySelector('#user-choice');
+const resetClicks = document.querySelector('#reset-clicks');
 
 
 // initialize state
@@ -19,6 +20,7 @@ const userThrow = document.querySelector("#user-choice");
 let wins = 0;
 let losses = 0;
 let ties = 0;
+let resets = 0;
 
 // set event listeners to update state and DOM
 
@@ -28,50 +30,40 @@ button.addEventListener('click', () => {
     userThrow.textContent = checkedChoice.value;
     const user = checkedChoice.value;
     
-
     const comp = getRandomThrow();
-    console.log(comp);
     compThrow.textContent = comp;
   
-
     const gameOutcome = didUserWin(user, comp);
-    console.log(gameOutcome);
+    
 
     if (gameOutcome === 'win'){
-        wins++
+        wins++;
         gameWins.textContent = wins;
-        throwResult.textContent = "You won!";
+        throwResult.textContent = 'You won!';
     }
     else if (gameOutcome === 'lose'){
-        losses++
+        losses++;
         gameLosses.textContent = losses;
-        throwResult.textContent = "You lose!";
+        throwResult.textContent = 'You lose!';
     } else {
-        ties++
+        ties++;
         gameTies.textContent = ties;
-        throwResult.textContent = "It was a tie."
+        throwResult.textContent = 'It was a tie.';
     }
     
 
-})
+});
 
 gameResetButton.addEventListener('click', () => {
+    resets++;
+    resetClicks.textContent = resets;
+    
+    gameWins.textContent = 0;
+    gameLosses.textContent = 0;
+    gameTies.textContent = 0;
 
-// function
-// reset wins losses and ties 
-gameWins.textContent = 0;
-gameLosses.textContent = 0;
-gameTies.textContent = 0;
+    throwResult.textContent = '';
 
-// reset throwResult
-throwResult.textContent = '';
-
-// compThrow and userThrow 
-compThrow.textContent = '';
-userThrow.textContent = '';
-
-
-
-
-
-})
+    compThrow.textContent = '';
+    userThrow.textContent = '';
+});

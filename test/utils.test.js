@@ -1,7 +1,7 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
-import {getRandomThrow} from '../get-random-throw.js'
-import {didUserWin} from '../did-user-win.js'
+import { getRandomThrow } from '../get-random-throw.js';
+import { didUserWin } from '../did-user-win.js';
 const test = QUnit.test;
 
 test('if computer input is scissor and user input is rock it will return win', (expect) => {
@@ -12,7 +12,7 @@ test('if computer input is scissor and user input is rock it will return win', (
     const actual = didUserWin(userInput, compInput);
 
     expect.equal(actual, expected);
-})
+});
 
 test ('if computer input is scissors and user input is paper it will return lose', (expect) => {
     const userInput = 'paper';
@@ -22,7 +22,7 @@ test ('if computer input is scissors and user input is paper it will return lose
     const actual = didUserWin(userInput, compInput);
 
     expect.equal(actual, expected);
-})
+});
 
 test('if computer input is paper and user input is scissors it will return win', (expect) => {
     const userInput = 'scissors';
@@ -32,7 +32,7 @@ test('if computer input is paper and user input is scissors it will return win',
     const actual = didUserWin(userInput, compInput);
 
     expect.equal(actual, expected);
-})
+});
 
 test('if computer input is paper and user input is rock it will return lose', (expect) => {
     const userInput = 'rock';
@@ -42,7 +42,7 @@ test('if computer input is paper and user input is rock it will return lose', (e
     const actual = didUserWin(userInput, compInput);
 
     expect.equal(actual, expected);
-})
+});
 
 test('if computer input is rock and user input is scissors it will return lose', (expect) => {
     const userInput = 'scissors';
@@ -52,7 +52,7 @@ test('if computer input is rock and user input is scissors it will return lose',
     const actual = didUserWin(userInput, compInput);
 
     expect.equal(actual, expected);
-})
+});
 
 test('if computer input is rock and user input is paper it will return win', (expect) => {
     const userInput = 'paper';
@@ -63,38 +63,33 @@ test('if computer input is rock and user input is paper it will return win', (ex
 
     expect.equal(actual, expected);
 
-test('if computer input and the user input are the same it will return tie', (expect) => {
-    const userInput = 'rock';
-    const compInput = 'rock';
+    test('if computer input and the user input are the same it will return tie', (expect) => {
+        const userInput = 'rock';
+        const compInput = 'rock';
     
-    const expected = 'tie';
-    const actual = didUserWin(userInput, compInput);
+        const expected = 'tie';
+        const actual = didUserWin(userInput, compInput);
 
-    expect.equal(actual, expected);
-})
+        expect.equal(actual, expected);
+    });
 
-})
+});
 
 
 
 test('should return a random number between 1 and 3', (expect) => {
     //Arrange
     // Set up your arguments and expectations
-    const possibleValues = ['rock', 'paper', 'scissors']
+    const possibleValues = ['rock', 'paper', 'scissors'];
    
     
     //Act 
     // Call the function you're testing and set the result to a const
     const actual = getRandomThrow();
-    console.log(getRandomThrow());
     const actual1 = getRandomThrow();
-    console.log(getRandomThrow());
     const actual2 = getRandomThrow();
-    console.log(getRandomThrow());
     const actual3 = getRandomThrow();
-    console.log(getRandomThrow());
     const actual4 = getRandomThrow();
-    console.log(getRandomThrow());
 
     //Expect
     // Make assertions about what is expected versus the actual result

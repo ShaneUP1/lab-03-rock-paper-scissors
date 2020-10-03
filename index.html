@@ -13,11 +13,7 @@
 </head>
 
 <body>
-    <header>
-        <div class="gutter-right logo">
-            <img src="assets/big-logo.png"/>
-        </div>
-    </header>
+   
 
 <!-- Main------------------------------------------------------------------------------------------------------------------------- -->
 
@@ -77,30 +73,33 @@
                 <br>
 
             <button id="play">3, 2, 1, Throw!</button>
-            <div>Computer threw <span id="comp-result"></span> and you threw <span id="user-choice"></span></div>
+            <div id="play-call">
+                Computer threw <span id="comp-result"></span> and you threw <span id="user-choice"></span>
+            </div>
+
             <div id="game-result"></div>
-            <div>
-                Wins: <span id="wins">0</span>
-            </div>
-            <div>
-                Losses: <span id="losses">0</span>
-            </div>
-            <div>
-                Ties: <span id="ties">0</span>
-            </div>
+                <div>
+                    Wins: <span id="wins">0</span>
+                </div>
+                <div>
+                    Losses: <span id="losses">0</span>
+                </div>
+                <div>
+                    Ties: <span id="ties">0</span>
+                </div>
+            
 
 <!-- Set reset button to document reset  -->
 
             <button id="reset-button">Reset</button>
+            <div>You've used <span id="reset-clicks"></span> resets.</div>
             
         </section>
     </main>
 
 <!-- footer---------------------------------------------------------------------------------------------------------------------------------- -->
 
-    <footer>
-        <div class="copy gutter-right">&copy; 2020 Alchemy Code Lab</div>
-    </footer>
+
 
     <script type="module" src="app.js"></script>
 </body>
