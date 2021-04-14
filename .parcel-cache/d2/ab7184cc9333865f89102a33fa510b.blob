@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="a65469b957dd677c649eedd5b9c4f503" rel="stylesheet">
+    <link rel="stylesheet" href="fd755a92c4e82b4c832f791f98907fb5">
+    <link rel="stylesheet" href="fd522bbb09cbccd318786bcaca5de61d">
+    <link rel="stylesheet" href="8222c128efa6ada17625608b867bd894">
+    <title>Document</title>
+</head>
+
+<body>
+   
+
+<!-- Main------------------------------------------------------------------------------------------------------------------------- -->
+
+    <main>
+  
+        <!-- Buttons------------------------------------------- -->
+  
+        <section class="main-section" id="game-main">
+
+            
+            <div class="rock-paper-scissors">
+                
+            <!-- PictureONE -->
+
+                    <label class="selectors" id="rock-selection">
+                        
+                        <input class="radio" type="radio" name="rps" value="rock" checked="">
+                        <img src="c2d003338f25a03a3bef2a0bfa5bd7c3">
+
+                    </label>
+
+            <!-- PictureTwo -->
+
+                    <label class="selectors" id="paper-selection">
+                        
+                        <input class="radio" type="radio" name="rps" value="paper">
+                        <img src="7498afeddc2ab2de50399d2d6554a585">
+
+                    </label>
+
+            <!-- PictureTHREE -->
+
+                    <label class="selectors" id="scissor-selection">
+                        
+                        <input class="radio" type="radio" name="rps" value="scissors">
+                        <img src="3d793652523bdd2881da290a313a34fb">
+
+                    </label>
+
+                </div>
+
+<!-- Other Stuff------------------------------------------------- -->
+                <br>
+                <br>
+
+            <button id="play">3, 2, 1, Throw!</button>
+            <div id="play-call">
+                Computer threw <span id="comp-result"></span> and you threw <span id="user-choice"></span>
+            </div>
+
+            <div id="game-result"></div>
+                <div>
+                    Wins: <span id="wins">0</span>
+                </div>
+                <div>
+                    Losses: <span id="losses">0</span>
+                </div>
+                <div>
+                    Ties: <span id="ties">0</span>
+                </div>
+            
+
+<!-- Set reset button to document reset  -->
+
+            <button id="reset-button">Reset</button>
+            <div>You've used <span id="reset-clicks">0</span> resets.</div>
+            
+        </section>
+    </main>
+
+<!-- footer---------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+
+    <script type="module" src="c9c46e7b4478acaf0dbde45ab663731a"></script>
+</body>
+
+</html>
