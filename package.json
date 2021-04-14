@@ -1,0 +1,27 @@
+{
+  "name": "lab-03-rock-paper-scissors",
+  "version": "1.0.0",
+  "description": "GOAL: user chooses rock, paper or scissors and plays against computer and tracksand display wins, losses and draws.",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "parcel serve src/*.html --open",
+    "test": "parcel serve src/test/*.html --open",
+    "build": "parcel build src/*.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShaneUP1/lab-03-rock-paper-scissors.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShaneUP1/lab-03-rock-paper-scissors/issues"
+  },
+  "homepage": "https://github.com/ShaneUP1/lab-03-rock-paper-scissors#readme",
+  "dependencies": {
+    "parcel": "*"
+  }
+}
